@@ -1,0 +1,30 @@
+= Pagination
+
+Autoload pagination on window scroll or button click.
+
+== Usage
+
+  <div id="posts" class="scroll-pagination" data-total="80">
+    <div class="post">...</div>
+    <div class="post">...</div>
+    <div class="post">...</div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('div.scroll-pagination').pagination();
+    });
+  </script>
+
+== Settings
+
+* page: 1
+* url: window.location.href
+* params: {}
+* method: 'GET'
+* dataType: 'html'
+* binder: window
+* event: 'scroll'
+* callback: null
+
+Copyright (c) 2012 Aimbulance, released under the MIT license
