@@ -49,11 +49,11 @@
       this.element.data('tt-text', text);
       this.element.data('tooltip', this);
       this.element.removeAttr(this.options.attribute);
-      this.container = this.create_container(this.options.container_id);
+      this.container = this._create_container(this.options.container_id);
       return this.container.hide();
     };
 
-    ToolTip.prototype.create_container = function(dom_id) {
+    ToolTip.prototype._create_container = function(dom_id) {
       var container, content, holder;
       if (dom_id == null) {
         dom_id = 'tt-container';
