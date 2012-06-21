@@ -4,13 +4,11 @@ Show tooltip on bottom of elements.
 
 == Usage
 
-``` html
   <a href="#" title="Some tooltip">...</a>
-```
-
-``` javascript
-  $("a").tooltip();
-```
+  
+  <script>
+    $("a").tooltip();
+  </script>
 
 == Settings
 
